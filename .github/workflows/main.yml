@@ -19,9 +19,9 @@ jobs:
         uses: johnbeynon/render-deploy-action@v0.0.8
         with:
     # ID of the service to deploy
-          service-id: 'srv-cht3phjhp8u4v7sjf9tg?key=-z2l4Zu8THc'
+          service-id: ${{ secrets.DOCKER_SERVER_ID }}
     # A Render API key
-          api-key: 'rnd_9FsRya2aEtpcOZ9jfT7QXSXZy7S3'
+          api-key: ${{ secrets.DOCKER_API_KEY }}
     
       
       
