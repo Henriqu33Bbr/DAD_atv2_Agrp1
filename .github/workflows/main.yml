@@ -1,0 +1,37 @@
+# This workflow will build a Java project with Ant
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-ant
+
+name: Deploy Render
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Render Deploy Action
+  # You may pin to the exact commit or the version.
+  # uses: johnbeynon/render-deploy-action@a0588f9aca995a15d69a72cb2bfbf37c12e5b540
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+    # ID of the service to deploy
+          service-id: 'srv-cht3phjhp8u4v7sjf9tg?key=-z2l4Zu8THc'
+    # A Render API key
+          api-key: 'rnd_9FsRya2aEtpcOZ9jfT7QXSXZy7S3'
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
